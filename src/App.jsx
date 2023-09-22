@@ -29,7 +29,7 @@ function App() {
   // Function to copy the generated password to the clipboard
   const copyPassToClipBoard = useCallback(() => {
     passRef.current?.select()
-    passRef.current?.setSelectionRange(0, 999) // Select the entire text
+    passRef.current?.setSelectionRange(0, 99) // Select the entire text
     window.navigator.clipboard.writeText(password)
   }, [password])
 
