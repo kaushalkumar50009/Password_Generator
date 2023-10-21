@@ -81,14 +81,8 @@ This is a simple React application for generating random passwords with customiz
 
 You can further customize the application by modifying the styles in the `App.css` file and changing the application logic in the `App.js` file.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - This project is created for educational purposes and as a practical example of a React application.
 
 ---
-
-Feel free to replace `your-username` in the clone command with your actual GitHub username, and update the License section as needed. This README provides an overview of your password generator application and instructions for using and customizing it.
