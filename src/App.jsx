@@ -7,6 +7,7 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
   const [password, setPassword] = useState("")
+  const [copyButton, setCopyButton] = useState("Copy")
 
   // Ref to store a reference to the password input field
   const passRef = useRef(null)
@@ -31,6 +32,9 @@ function App() {
     passRef.current?.select()
     passRef.current?.setSelectionRange(0, 99) // Select the entire text
     window.navigator.clipboard.writeText(password)
+    setCopyButton("Text Copied !")
+
+    setTimeout(() => setCopyButton("Copy"), 2000)
   }, [password])
 
   // useEffect to trigger password generation when options change
@@ -59,7 +63,7 @@ function App() {
             className='outline-none bg-blue-600 text-white px-3 py-0.5 shrink'
             onClick={copyPassToClipBoard}
           >
-            Copy
+            {copyButton}
           </button>
         </div>
 
