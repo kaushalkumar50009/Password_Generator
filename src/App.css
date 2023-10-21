@@ -1,0 +1,5 @@
+.bg-local-image {
+  background-image: url("/images/your-image.jpg"); /* Adjust the path to your image */
+  background-size: cover;
+  background-position: center;
+}

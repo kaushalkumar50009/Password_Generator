@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+}
+/* styles.css */
+body {
+  background: url("../public/cloud-5946381_1920.jpg") !important;
+  background-size: 100% 100vh !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container {
+  border: 2px solid #e6e6e6;
+  gap: 24px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 33px;
+  letter-spacing: 0.5px;
+  width: 50vw;
+  height: 50vh;
+}
